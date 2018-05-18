@@ -16,7 +16,8 @@ class EmailParser
     clean = []
     split_address.collect do |item|
       if item != ""
-      clean << item.strip
+        clean << item.strip
+      end
     end
     clean
   end
