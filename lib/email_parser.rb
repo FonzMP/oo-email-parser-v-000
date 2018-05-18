@@ -19,7 +19,8 @@ class EmailParser
     end
     split_space = @address.split(" ")
     split_space.collect do |item|
-      clean << item.stripend
+      clean << item.strip
+    end
     clean
   end
 
