@@ -19,7 +19,7 @@ class EmailParser
         clean << item.strip
       end
     end
-    clean.unique
+    clean.uniq
   end
 
 end
