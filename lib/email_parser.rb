@@ -5,6 +5,8 @@
 
 class EmailParser
 
+  def initialize(address)
+
   def parse
     split_address = address.split(",")
     clean = []
