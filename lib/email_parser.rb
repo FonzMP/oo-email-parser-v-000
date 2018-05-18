@@ -8,7 +8,7 @@ class EmailParser
   attr_accessor :address
 
   def parse
-    split_address = address.split(",")
+    split_address = @address.split(",")
     clean = []
     split_address.collect do |item|
       clean << item.strip
