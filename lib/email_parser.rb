@@ -6,7 +6,7 @@
 class EmailParser
 
   def parse(address)
-    split_address = @address.split(",")
+    split_address = address.split(",")
     clean = []
     split_address.collect do |item|
       clean << item.strip
